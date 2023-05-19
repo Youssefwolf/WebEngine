@@ -4,14 +4,32 @@
     justify-content: center;
     align-items: center;
 }
+#one a {
+    font-size: 20pt;
+}
 
 input {
     width: 300px;
     height: 50px;
+    border-radius: 24px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form > div > text {
+    font-size: 20pt;
 }
 #inS {
     width: 150px;
     background-color: skyblue;
+    align-self: center;
+}
+#inT {
+    margin-right: 10px;
+}
+form > div {
+    background-color: gray;
 }
 #inS:hover {
     background-color: cyan;
@@ -23,10 +41,20 @@ input {
 #inT:focus{
     background-color: teal;
 }
+#one {
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+}
 
 #one > h1 {
     text-align: center;
     font-size: 60pt;
+    margin: 20px;
+}
+#one > h2 {
+    text-align: center;
+    font-size: 30pt;
+    margin: 10px;
 }
 
 div {
@@ -35,7 +63,7 @@ div {
 body {
     display: grid;
     grid-template-columns: 1000px ;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-rows: 280px 280px 280px;
     justify-content: center;
 }
 
@@ -48,4 +76,14 @@ body {
 .navitem {
     font-size: large;
     font-weight: bold;
+}
+#three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+#three > h2{
+    font-size: 20pt;
 }
